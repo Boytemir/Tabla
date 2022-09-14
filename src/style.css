@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.section {
+    padding: 50px;
+}
+
+.title h2 {
+    font-size: 40px;
+    color: #1e1e1e;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.title .underline {
+   width: 120px;
+   height: 3px;
+   background-color: chocolate;
+   margin: 10px auto;
+}
+
+.jobs-center {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.btn-container button {
+   display: block;
+   background-color: transparent;
+   border: 3px solid transparent;
+   margin-bottom: 20px;
+   padding: 3px 5px;
+   cursor: pointer;
+   font-size: 18px;
+   letter-spacing: 3px;
+   font-weight: 100;
+   font-family: sans-serif;
+   color: #1e1e1e;
+   transition: all 0.4s ease-in-out;
+   outline: none;
+}
+
+.btn-container button:hover {
+    border-left: 3px solid chocolate;
+    color: chocolate;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn-container button.active-btn {
+    border-left: 3px solid chocolate;
+    color: chocolate;
+}
+
+.job-info {
+    margin-left: 50px;
+    width: 70%;
+}
+
+.job-info h3 {
+    color: #1e1e1e;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+}
+
+.job-info h4 {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.3);
+    width: 80px;
+    text-align: center;
+    border-radius: 2px;
+    padding: 5px 0;
+    margin: 20px 0;
+}
+
+.job-info .job-date {
+    font-size: 16px;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.job-desc {
+    display: flex;
+    align-items: center;
+}
+
+.job-desc .job-icon {
+    color: chocolate;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.job-desc p {
+    font-size: 16px;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 20px;
+}
+
+
+@media (max-width: 600px) {
+
+    .section {
+        padding: 20px;
+    }
+
+    .title h2 {
+        font-size: 25px;
+    }
+
+    .jobs-center {
+        flex-wrap: wrap;
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .btn-container button {
+        margin: 20px;
+        font-size: 14px;
+     }
+
+     .btn-container button:hover {
+        border-left: none;
+        border-bottom: 3px solid chocolate;
+    }
+    
+    .btn-container button.active-btn {
+        border-left: none;
+        border-bottom: 3px solid chocolate;
+    }
+    .job-info {
+        width: 100%;
+        margin: 30px 0 0 0 ;
+    }
+
+    .job-info h3 {
+        font-size: 20px;
+    }
+}
